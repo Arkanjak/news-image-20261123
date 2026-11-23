@@ -83,9 +83,9 @@ d.rectangle([664, 260, 696, 270], fill=(150, 60, 40, 255))
 smoke = Image.new("RGBA", (W, H), (0, 0, 0, 0))
 sd = ImageDraw.Draw(smoke)
 sx, sy = 430, 300
-for i in range(18):
-    r = 30 + i * 8
-    sd.ellipse([sx - r, sy - r, sx + r, sy + r], fill=(52, 52, 58, 175))
+for i in range(24):
+    r = 32 + i * 9
+    sd.ellipse([sx - r, sy - r, sx + r, sy + r], fill=(58, 58, 64, 205))
     sx -= 13
     sy -= 13
 img.paste(Image.alpha_composite(img.convert("RGBA"),
